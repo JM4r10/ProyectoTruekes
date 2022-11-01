@@ -1,0 +1,42 @@
+[
+    {
+        "nombre":"Estado 1",
+        "descripcion":"Descripcion estado 1",
+        "numero": 10,
+        "imagen": "./Recursos/magic_01.webp",
+        "usuario": "Luis",
+        "valor":"Alta"        
+    },
+    {
+        "nombre":"Estado 2",
+        "descripcion":"Descripcion estado 2",
+        "numero": 20,
+        "imagen": "./Recursos/magic_02.webp",
+        "usuario": "Paula",
+        "valor":"Media"            
+    },
+    {
+        "nombre":"Estado 3",
+        "descripcion":"Descripcion estado 3",
+        "numero": 30,
+        "imagen": "./Recursos/magic_03.webp",
+        "usuario": "Ariana",
+        "valor":"Alta"        
+    },
+    {
+        "nombre":"Estado 4",
+        "descripcion":"Descripcion estado 4",
+        "numero": 40,
+        "imagen": "./Recursos/magic_04.webp",
+        "usuario": "Andres",
+        "valor":"Alta"        
+    },
+    {
+        "nombre":"Estado 5",
+        "descripcion":"Descripcion estado 5",
+        "numero": 50,
+        "imagen": "./Recursos/magic_05.jpg",
+        "usuario": "Maria",
+        "valor":"Alta"        
+    }
+]      

@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Datos from "./Datos.json"
-import Tarjeta from './Tarjeta';
+import Articulos from './Articulos.js';
 
 class Cargar extends Component{
     constructor(){
@@ -12,7 +12,7 @@ class Cargar extends Component{
         
         let mostrar = this.state.Datos.map((dato)=>{
             return(                
-                <Tarjeta titulo={dato.titulo} descripcion={dato.decripcion} numero={dato.numero} imagen={dato.imagen} prioridad={dato.prioridad} responsable={dato.responsable}/>
+                <Articulos nombre={dato.nombre} descripcion={dato.descripcion} numero={dato.numero} imagen={dato.imagen} valor={dato.valor} usuario={dato.usuario}/>
                 
             )
         });
