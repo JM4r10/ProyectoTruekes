@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import App from "../App";
 import Formulario from "./Formulario.js";
 import Inicio_sesion from "./Inicio_sesion.js";
 import Crear_usuario from "./Crear_usuario.js";
@@ -31,6 +30,9 @@ class Navegacion extends Component{
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                         <button className="btn btn-outline-primary" type="submit">Search</button>
                     </form>
+                    <div className="text-primary ms-5 mt-2">
+                        Usuario: Luis
+                    </div>
                 </div>
                 
                     <div className="tab-content" id="myTabContent">

@@ -6,11 +6,32 @@ class Articulos extends Component{
     constructor(){
         super();
         this.state={
-            nombre:''
-        }    
+            btn1:
+            <div>
+                <button formTarget="formulario1" className="btn btn-primary border mx-auto me-2 mt-1" onClick={this.editar}>Editar</button>
+                <button className="btn btn-danger border mx-auto mt-1" onClick={this.eliminar}>Eliminar</button>                
+            </div>,
+            btn2: <button formTarget="formulario1" className="btn btn-success border mx-auto mt-1" onClick={this.intercambiar}>Intercambiar</button>
+        };    
     }
+
+    botones(usuario){
+        if(usuario === 'Luis') return this.state.btn1;
+        else return this.state.btn2;
+        
+    
+    }
+
     editar(){
         alert("Editando...");
+    }
+
+    intercambiar(){
+        alert("Trading...");
+    }
+
+    eliminar(){
+        alert("Eliminando...");
     }
 
     render(){
@@ -23,11 +44,11 @@ class Articulos extends Component{
                             <h5 className="card-title">{this.props.nombre}</h5>
                             <p className="card-text">{this.props.descripcion}</p>
                             <span className="bg-danger rounded-pill text-white" >Valor: {this.props.valor}</span> <br/> 
-                            <span className="bg-success rounded-pill text-white">Usuario: {this.props.nombre}</span> <br/>
+                            <span className="bg-success rounded-pill text-white">Usuario: {this.props.usuario}</span> <br/>
                             <span className="bg-primary rounded-pill text-white">Cantidad: {this.props.numero} </span> 
-                            <br/> <br/> 
-                            <button formTarget="formulario1" className="btn btn-primary border mx-auto me-1" onClick={this.editar}>Editar</button>
-                            <button className="btn btn-danger border mx-auto">Eliminar</button>
+                            <br/>
+                            {this.botones(this.props.usuario)}
+                            
                         </div>
                     </div>
                 </div>  
